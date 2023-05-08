@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include "Variables.h"
-
 using namespace std;
+
 
 int main() {
   string fileName = "passwords.txt";
@@ -15,7 +15,8 @@ int main() {
   outFile.open(fileName, ios::out | ios::app);
 
   // write data to the file
-  std::cin << password;
+  cout <<"Enter the password you would like to store: ";
+  cin >> password;
   outFile << password << endl;
 
   outFile.close();
