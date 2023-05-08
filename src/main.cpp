@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include "functions.h"
 
 using namespace std;
 
@@ -11,18 +12,6 @@ const string FILENAME = "passwords.txt";
 bool fileExists(string fileName) {
     ifstream infile(fileName.c_str());
     return infile.good();
-}
-
-// function to display all saved passwords
-void displayPasswords(vector<string>& passwords) {
-    if (passwords.size() == 0) {
-        cout << "\nYou have no saved passwords.\n" << endl;
-        return;
-    }
-    cout << "\nHere are your saved passwords:\n" << endl;
-    for (int i = 0; i < passwords.size(); i++) {
-        cout << passwords[i] << endl;
-    }
 }
 
 // function to add a new password
