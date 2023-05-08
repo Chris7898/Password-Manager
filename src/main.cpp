@@ -1,15 +1,15 @@
 #include <iostream>
 #include <fstream>
-#include "Variables.h"
 using namespace std;
 
 
 int main() {
-  string fileName = "passwords.txt";
-  ofstream outFile;
-  ifstream inFile;
-  string password;
-  string readPassword;
+
+ string password;
+ string readPassword;
+ string fileName = "passwords.txt";
+ ofstream outFile;
+ ifstream inFile;
 
   // open the output file stream for writing
   outFile.open(fileName, ios::out | ios::app);
