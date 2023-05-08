@@ -1,4 +1,4 @@
-#include <iostream>
+/* #include <iostream>
 #include <fstream>
 #include <string>
 #include <cstring>
@@ -96,4 +96,4 @@ int main() {
         unsigned char plaintext[1024];
         size_t plaintext_len;
         decrypt(masterPassword.c_str(), ciphertext, ciphertext_len, plaintext, plaintext_len);
-
+*/

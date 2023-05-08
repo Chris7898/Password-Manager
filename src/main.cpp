@@ -5,12 +5,24 @@ using namespace std;
 
 int main() {
 
+ string masterPassword = "myMasterPassword";
  string password;
  string readPassword;
  string fileName = "passwords.txt";
  ofstream outFile;
  ifstream inFile;
 
+cout << "Enter your master password: ";
+cin >> password;
+
+if (password != masterPassword) {
+    cout << "Incorrect password, access denied." << endl;
+    return 1; // exit the program
+}
+
+cout << "Access granted." << endl;
+
+// allow user to access the password database
   // open the output file stream for writing
   outFile.open(fileName, ios::out | ios::app);
 
