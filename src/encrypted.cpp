@@ -1,7 +1,7 @@
 #include <iostream>
-#include <openssl/include/crypto/aes.h>
-#include "openssl/include/crypto/evp.h"
-#include "openssl/rand.h"
+#include "openssllib/include/openssl/aes.h"
+#include "openssllib/include/crypto/evp.h"
+#include "openssllib/rand.h"
 #include <fstream>
 #include <cstring>
 
